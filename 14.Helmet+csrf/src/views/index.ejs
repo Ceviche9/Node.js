@@ -1,0 +1,18 @@
+<%- include('includes/head');%>
+<body>
+    <section class="Caixa">
+        <h1>
+            Página inicial
+        </h1>
+        <form action="/" method="post">
+            <input type="hidden" name="_csrf" value="<%= csrf %>">
+            <label>Cliente</label>
+            <input type="text" name="cliente">
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    
+    <script src="./assets/js/bundle.js"></script>
+</body>
+</html>
